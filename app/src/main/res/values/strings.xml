@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tarhil</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_main4">Main4Activity</string>
+    <string name="title_activity_main5">Main5Activity</string>
+    <string name="title_activity_main6">Main6Activity</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

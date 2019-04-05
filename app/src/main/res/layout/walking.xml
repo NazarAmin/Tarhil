@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="390dp">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mapw"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            tools:context="com.example.higooo.tarhil.MapsActivity" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="right"
+            android:textColor="@color/Black"
+            android:id="@+id/speed"
+
+            />
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:text="Km/h"
+            android:layout_toRightOf="@id/speed"
+            android:textColor="@color/Black"
+            android:gravity="center"
+            android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Start Trip"
+            android:textSize="8dp"
+            android:id="@+id/trip"
+            />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+
+            android:text="End Trip"
+            android:textSize="8dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/reset"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Full Screen"
+
+            android:layout_marginLeft="30dp"
+            android:id="@+id/full"
+            android:textSize="8dp"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="Average Speed: "
+            android:layout_marginLeft="16dp"
+            android:textSize="10dp"
+            android:textColor="@color/Black"
+            android:id="@+id/Tavg"
+
+            />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:id="@+id/avg"
+            android:layout_toRightOf="@id/Tavg"
+
+            />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/Ravg"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/avg"
+            android:text="Km/h"
+
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="Start at: "
+            android:layout_marginLeft="30dp"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/Ravg"
+            android:textColor="@color/Black"
+
+            android:id="@+id/Tdur"
+
+            />
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:textSize="7dp"
+            android:id="@+id/dur"
+            android:layout_toRightOf="@id/Tdur"
+
+            />
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="End at: "
+            android:layout_marginLeft="30dp"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/Rdis"
+            android:layout_below="@id/Tdur"
+            android:id="@+id/Tende"
+            android:textColor="@color/Black"
+
+
+            />
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:textSize="7dp"
+            android:id="@+id/ende"
+            android:layout_toRightOf="@id/Tende"
+            android:layout_below="@id/Tdur"
+
+            />
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="16dp"
+            android:text="Distance: "
+            android:textSize="10dp"
+            android:textColor="@color/Black"
+
+            android:layout_below="@id/Tavg"
+            android:id="@+id/Tdis"
+
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:id="@+id/dis"
+            android:layout_toRightOf="@id/Tdis"
+            android:layout_below="@id/avg"
+
+            />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/Rdis"
+            android:layout_toRightOf="@id/dis"
+            android:layout_below="@id/Ravg"
+            android:text="M"
+            android:textSize="10dp"
+
+            />
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="16dp"
+            android:text="Max Speed: "
+            android:textSize="10dp"
+            android:textColor="@color/Black"
+
+            android:layout_below="@id/Tdis"
+            android:id="@+id/Tmsp"
+
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:id="@+id/msp"
+            android:layout_toRightOf="@id/Tmsp"
+            android:layout_below="@id/dis"
+
+            />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/Rmsp"
+            android:layout_toRightOf="@id/dis"
+            android:layout_below="@id/Rdis"
+            android:text="Km/h"
+            android:textSize="10dp"
+
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+
+            android:id="@+id/listH"
+            android:textSize="8dp"
+            android:text="History"
+            android:layout_below="@id/Tmsp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Paused"
+            android:layout_below="@id/listH"
+            android:background="@color/Red"
+            android:text="Stop Recording Trip"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/onride"
+            android:layout_below="@id/listH"
+            android:background="@color/Green"
+            android:text="Recording Trip.."
+            android:visibility="invisible"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/blank"
+            android:layout_below="@id/listH"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

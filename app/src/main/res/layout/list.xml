@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Start Time:"
+        android:textColor="@color/Black"
+        android:id="@+id/StartL"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="11dp"
+            android:gravity="center"
+
+            android:textColor="@color/Black"
+            android:layout_toRightOf="@id/StartL"
+            android:id="@+id/TVStart"/>
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:text="Avg Speed:"
+android:gravity="center"
+        android:textColor="@color/Black"
+        android:layout_below="@id/StartL"
+        android:id="@+id/AvgL"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            android:layout_toRightOf="@id/AvgL"
+            android:layout_below="@id/TVStart"
+            android:textColor="@color/Black"
+            android:id="@+id/TVAvg"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:text="Max Speed:"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:layout_below="@id/AvgL"
+        android:id="@+id/MaxL"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/DisL"
+            android:layout_below="@id/TVDis"
+            android:id="@+id/TVMax"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:text="Distance:"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:layout_below="@id/MaxL"
+        android:id="@+id/DisL"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/MaxL"
+            android:layout_below="@id/TVAvg"
+            android:gravity="center"
+
+            android:textColor="@color/Black"
+            android:id="@+id/TVDis"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:text="End Time:"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:layout_below="@id/DisL"
+        android:id="@+id/EndL"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="11dp"
+            android:layout_toRightOf="@id/EndL"
+            android:textColor="@color/Black"
+            android:gravity="center"
+
+            android:layout_below="@id/TVMax"
+            android:id="@+id/TVEnd"/>
+
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
